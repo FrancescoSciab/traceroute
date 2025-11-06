@@ -1,11 +1,16 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>traceroute</title>
+  <meta charset="utf-8">
+  <title>NORP Traceroute Viz</title>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+  <style>body{margin:0;font-family:Arial}#map{height:100vh}</style>
 </head>
 <body>
-    
+  <div id="map"></div>
+  <script src="traceroute.js"></script>
+  <script>window.onload = () => traceTo('google.com')</script>
 </body>
 </html>
